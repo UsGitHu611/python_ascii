@@ -1,3 +1,6 @@
-def dot(n,m):
-    #your code here
-    pass
+def dot(n, m):
+    res = ''
+    sep = '+' + ('---+' * n) + '\n'
+    for _ in range(m):
+        res += sep + ('| o ' * n) + '|' '\n'
+    return res + sep[:-1]
